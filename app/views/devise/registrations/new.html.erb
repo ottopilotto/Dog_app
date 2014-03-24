@@ -1,0 +1,24 @@
+<div class="registration-form">
+	<div class="form-logo"><%=image_tag 'dog_logo.png', class: 'logo-image'%></div>
+	<div class="form-header">New Member:</div>
+	<div class="form-body">
+	<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+	  <%= devise_error_messages! %>
+	 
+
+	  <div><%= f.label :email %>
+	  <%= f.email_field :email, :autofocus => true, class: 'form-field' %></div>
+
+	  <div><%= f.label :password %>
+	  <%= f.password_field :password,  class: 'form-field' %></div>
+
+	  <div><%= f.label :repeat_password %>
+	  <%= f.password_field :password_confirmation,  class: 'form-field' %></div>
+
+	  <div><%= f.submit "Create account", class: 'form-button' %></div>
+	<% end %>
+
+	<%= render "devise/shared/links" %>
+	</div>
+	
+</div>

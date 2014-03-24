@@ -1,0 +1,10 @@
+div.registration-form {
+	height: 500px;
+	width: 400px;
+	background-color: green;
+}
+
+.form-logo {
+	height:50px;
+	text-align: right;
+}
