@@ -1,3 +1,14 @@
  <header>
- 	<div class='header-logo'><%=image_tag 'dog_logo_header.png', class: 'header-logo-picture'%></div>
+ 	<div class='header-logo'><%=link_to image_tag('dog_logo_header.png', class: 'header-logo-picture'), root_path %></div> 
+ 	<nav>
+ 		<% if user_signed_in? %>
+  			<div class="header-notice">Logged in as <strong><%= current_user.email %></strong>.</div>
+  			<div class="header-reg-button"><%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %></div>
+  			<div class="header-sig-button"><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %></div>
+		<% else %>
+  			<div class="header-reg-button"><%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %></div> 
+
+  			<div class="header-sig-button"><%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %></div>
+		<% end %>
+	</nav>
  </header>

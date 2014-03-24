@@ -1,3 +1,66 @@
+header {
+	background-image:url('dog_logo_header_2.png');
+	background-repeat: no-repeat;
+	height: 70px; 
+	border-bottom: 1px dotted black;
+}
+
+.header-logo {
+	width:70px;
+	display:inline-block;
+}
+
 .header-logo-picture {
 	height:55px;
+}
+
+nav {
+	font-family: Trebuchet MS;
+	float:right;
+	padding:5px 20px 0px 0px ;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+.header-reg-button {
+	font-size: 1.2em;
+	background-color: #DEDC18;
+	width:100px;
+	height:35px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 35px;
+	border-radius: 10px;
+	margin-right: 10px;
+	float: left;
+}
+
+.header-sig-button {
+	font-size: 1.2em;
+	background-color: #ACD907;
+	width:100px;
+	height:35px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 35px;
+	border-radius: 10px;
+	float:left;
+}
+
+.header-notice {
+	color: black;
+	font-size: 1em;
+	width:200px;
+	height:35px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 35px;
+	float:left;
 }
