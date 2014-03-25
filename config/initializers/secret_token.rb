@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-DogApp::Application.config.secret_key_base = 'a2a3a48e6c7c075bbf7a2cc5c78c722aeff7f8be4a2282174b510b112776674d9f6b6d23b7e9423798bbace079221b21b6f0f60567d971324aeee4c21f37f0fc'
+DogApp::Application.config.secret_key_base = 'a2a3a48e6c7c075bbf7a2cc5c78c722aeff7f8be4a2282174b480b112776674d9f6b6d23b7e9423755bbace079221b21b6f0f60567d971324aeee4c56f37f0fcbvc'
