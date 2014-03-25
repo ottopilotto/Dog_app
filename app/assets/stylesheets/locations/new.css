@@ -1,0 +1,96 @@
+div {
+	font-family: Trebuchet MS;
+	color: white;
+}
+div.registration-form {
+	height: 360px;
+	width: 500px;
+	background-color: #ACD907;
+	margin: auto;
+	/*text-align: center;*/
+	border-radius: 10px;
+	margin-top: 70px;
+}
+
+.form-logo {
+	width:100px;
+	padding:20px;
+	display: inline-block;
+	
+		
+}
+
+.logo-image {
+	width:100px;
+
+}
+
+.form-header {
+	width:250px;
+
+	float:right;
+	font-size: 1.9em;
+	color: white;
+	padding: 40px;
+	margin-bottom: -50px;
+}
+
+.form-body {
+	float:right;
+	font-size: 1.5em;
+	margin-top: 10px;
+	text-align: right;
+	margin-right: 30px;	
+}
+
+.form-field {
+	width:200px;
+	height:35px ;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border: none;
+	padding-left:10px;
+}
+
+.form-field:focus {
+	
+}
+.form-button {
+	-moz-box-shadow:inset 0px 0px 0px -50px #ffffff;
+	-webkit-box-shadow:inset 0px 0px 0px -50px #ffffff;
+	box-shadow:inset 0px 0px 0px -50px #ffffff;
+	background-color:#DEDC18;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Trebuchet MS;
+	font-size:20px;
+	font-weight:bold;
+	font-style:normal;
+	height:50px;
+	line-height:50px;
+	width:200px;
+	text-decoration:none;
+	text-align:center;
+	/*text-shadow:1px 1px 0px ;*/
+	margin-top: 10px;
+}.form-button:hover {
+	background-color:#dfdfdf;
+}.form-button:active {
+	position:relative;
+	top:1px;}

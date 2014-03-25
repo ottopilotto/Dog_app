@@ -1,0 +1,27 @@
+<div class="registration-form">
+	<div class="form-logo"><%=image_tag 'dog_logo.png', class: 'logo-image'%></div>
+	<div class="form-header">New Location:</div>
+	<div class="form-body">
+	<%= form_for @location do |f| %>
+		<div>
+			<%= f.label :name %>
+			<%=f.text_field :name, class: 'form-field'  %>
+		</div>
+		<div>
+			<%= f.label :address %>
+			<%= f.text_field :address, class: 'form-field' %>
+		</div>
+		<div>
+			<%= f.label :longitude %>
+			<%= f.text_field :longitude, class: 'form-field' %>
+		</div>
+		<div>
+			<%= f.label :latitude %>
+			<%= f.text_field :latitude, class: 'form-field' %>
+		</div>
+		<div>
+			<%= f.submit "Create location", class: 'form-button' %>
+		</div>
+	<% end %>
+	</div>
+</div>

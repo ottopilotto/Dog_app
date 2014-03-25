@@ -1,5 +1,7 @@
 class LocationsController < ApplicationController
 
+  before_filter :authenticate_user!
+
   def index
     @locations = Location.all
   end
@@ -27,7 +29,7 @@ class LocationsController < ApplicationController
 
   def update
     @location = Location.find(params[:id])
-    if @location.update_attributes(params[:location])
+    if @location.update_attributes(location_params)
       redirect_to @location, notice: "Successfully updated location"
     else
       render action: 'edit'
@@ -40,7 +42,13 @@ class LocationsController < ApplicationController
     redirect_to locations_url, notice: "Successfully destroyed location."
   end
 
-
+private
   
+  def location_params
+    params.require(:location).permit(:name, :address, :longitude, :latitude)  
+  end
+
+
 
 end
+

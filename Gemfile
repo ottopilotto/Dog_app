@@ -57,3 +57,4 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'devise'
+gem 'geocoder'
