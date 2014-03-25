@@ -12,5 +12,5 @@
 <p><strong>Description :</strong>
 </p>
 
-<div id="map"></div>
+<div id="map" data-latitude = "<%= @location.latitude %>" data-longitude = <%= @location.longitude %>></div>
 <%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@location.latitude}%2C#{@location.longitude}" %>
