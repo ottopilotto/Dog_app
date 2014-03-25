@@ -3,7 +3,7 @@ div {
 	color: white;
 }
 div.registration-form {
-	height: 330px;
+	height: 360px;
 	width: 500px;
 	background-color: #ACD907;
 	margin: auto;
@@ -93,4 +93,4 @@ div.registration-form {
 	background-color:#dfdfdf;
 }.form-button:active {
 	position:relative;
-	top:1px;
+	top:1px;}
