@@ -1,8 +1,9 @@
 div {
 	font-family: Trebuchet MS;
-	color: white;
+	
 }
 div.registration-form {
+	color: white;
 	height: 360px;
 	width: 500px;
 	background-color: #ACD907;
@@ -26,6 +27,7 @@ div.registration-form {
 }
 
 .form-header {
+	color: white;
 	width:250px;
 
 	float:right;
@@ -36,6 +38,7 @@ div.registration-form {
 }
 
 .form-body {
+	color: white;
 	float:right;
 	font-size: 1.5em;
 	margin-top: 10px;

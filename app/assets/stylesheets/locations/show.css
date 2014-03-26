@@ -3,3 +3,7 @@
 	width: 600px;
 	margin:auto;
 }
+
+.leaflet-popup-content {
+	color: black;
+}
