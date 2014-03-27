@@ -12,9 +12,11 @@
 <p><strong>Description :</strong>
 </p>
 
+<%= image_tag @location.avatar.url %>
+
 <%= show_map(@location)  %>
 
-<% @location.nearbys(10, :units => :km).each do |location| %>
+<% @location.nearbys(5, :units => :km).each do |location| %>
   <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> km)</li>
   <script type="text/javascript">
 $(document).ready(function() {
