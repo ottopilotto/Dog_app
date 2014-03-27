@@ -58,3 +58,4 @@ end
 
 gem 'devise'
 gem 'geocoder'
+gem "paperclip", "~> 4.1"

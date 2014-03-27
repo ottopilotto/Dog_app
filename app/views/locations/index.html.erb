@@ -4,9 +4,9 @@
 
 <% @locations.each do |location| %>
 
-<%= location.name  %>
+<% location.name  %>
 
-<%=location.address  %>
+<%location.address  %>
 <%location.longitude  %>
 <% location.latitude %>
 
@@ -16,9 +16,15 @@ $(document).ready(function() {
 	L.marker([
 		<%= location.latitude %>,
 		<%= location.longitude %>
-	]).addTo(map);
+	]).addTo(map).bindPopup('<%=location.name%>').openPopup();
+
 });
 </script>
 
+
+
+
 <% end %>
+
+<%=current_user.location  %>
 
