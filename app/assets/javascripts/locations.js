@@ -10,10 +10,6 @@ $(function() {
   //   navigator.geolocation.getCurrentPosition(showMap);
 
   // }
-
-  
-
-
   var add, lat, lng, mapDiv, name, onMapClick, popup, localink;
   mapDiv = $('#map');
   lat = mapDiv.data('latitude');
@@ -22,21 +18,18 @@ $(function() {
   name = mapDiv.data('name');
   mapId = mapDiv.data('id');
   window.map = L.map('map').setView([lat, lng], 14);
-  localink = "<a href='/locations'" + mapId +" >" + name + add +"</a>"
-
-
+  // localink = "<a href='/locations'" + mapId +" >" + name + add +"</a>"
 
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  L.marker([lat, lng]).addTo(map).bindPopup(localink).openPopup();
+  L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
 
   onMapClick = function(e) {
     window.e = e
     link = "<a href='/locations/new?lat=" + e.latlng.lat+";&lng="+ e.latlng.lng +"'>Add location</a>"
-    popup.setLatLng(e.latlng).setContent( link).openOn(map);
-
+    popup.setLatLng(e.latlng).setContent(link).openOn(map);
   };
 
   popup = L.popup();

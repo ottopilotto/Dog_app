@@ -10,25 +10,27 @@
 </p>
 
 <p><strong>Description :</strong>
+	<%=@location.description%>
 </p>
 
-<%= image_tag @location.avatar.url %>
+<%= image_tag @location.avatar.url(:medium) %>
 
 <%= show_map(@location)  %>
 
 <% @location.nearbys(5, :units => :km).each do |location| %>
-  <li><%= link_to location.address, location %> (<%= location.distance.round(2) %> km)</li>
+  <li><%= link_to location.name, location %> (<%= location.distance.round(2) %> km)</li>
+  <% end %>
   <script type="text/javascript">
 $(document).ready(function() {
 	L.marker([
-		<%= location.latitude %>,
-		<%= location.longitude %>
-	]).addTo(map).bindPopup('<%=location.name%>').openPopup();
+		<%= @location.latitude %>,
+		<%= @location.longitude %>
+	]).addTo(map).bindPopup('<%=@location.name%> <br> <%=@location.description%>' ).openPopup();
 
 });
 </script>
 
-<% end %>
+
 
 <!-- <div id="map" data-latitude = "<%= @location.latitude %>" data-longitude = <%= @location.longitude %>></div> -->
  

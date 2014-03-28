@@ -8,7 +8,7 @@
 
 <%location.address  %>
 <%location.longitude  %>
-<% location.latitude %>
+<%location.latitude %>
 
 
 <script type="text/javascript">
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	L.marker([
 		<%= location.latitude %>,
 		<%= location.longitude %>
-	]).addTo(map).bindPopup('<%=location.name%>').openPopup();
+	]).addTo(map).bindPopup('<%=location.name%> <br><%= image_tag location.avatar.url(:thumb) %> <br> <%=location.description  %>' ).openPopup();
 
 });
 </script>
