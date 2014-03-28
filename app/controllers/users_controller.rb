@@ -5,14 +5,11 @@ class UsersController < Devise::RegistrationsController
   end
 
   def show
-  
   end
 
   def update
     super
-    
   end
-
 end
 
 private 

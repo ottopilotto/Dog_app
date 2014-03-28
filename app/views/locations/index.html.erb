@@ -1,15 +1,8 @@
 <h2>Locations</h2>
+
 <%=show_map(@locations.first)%>
 
-
 <% @locations.each do |location| %>
-<table></table>
-<% location.name  %>
-
-<%location.address  %>
-<%location.longitude  %>
-<%location.latitude %>
-
 
 <script type="text/javascript">
 $(document).ready(function() {
@@ -26,5 +19,5 @@ $(document).ready(function() {
 
 <% end %>
 
-<%=current_user.location  %>
+
 

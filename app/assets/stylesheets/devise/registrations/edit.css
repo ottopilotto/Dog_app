@@ -1,4 +1,34 @@
 div {
 	font-family: Trebuchet MS;
+	font-size: 0,5em;
 	/*color: white;*/
+}
+
+div.registration-form-edit {
+	height: 800px;
+	width: 500px;
+	background-color: #ACD907;
+	margin: auto;
+	/*text-align: center;*/
+	border-radius: 10px;
+	margin-top: 70px;
+	font-size: 1em;
+}
+
+.form-header {
+	width:250px;
+
+	float:right;
+	font-size: 1em;
+	color: white;
+	padding: 40px;
+	margin-bottom: -50px;
+}
+
+.form-body {
+	float:right;
+	font-size: 0,5em;
+	margin-top: 10px;
+	text-align: right;
+	margin-right: 30px;	
 }
