@@ -19,6 +19,8 @@ $(function() {
     add = mapDiv.data('address');
     name = mapDiv.data('name');
     mapId = mapDiv.data('id');
+    mapDes = mapDiv.data('description');
+    mapImage = mapDiv.data('image');
     window.map = L.map('map').setView([lat, lng], 14);
     // localink = "<a href='/locations'" + mapId +" >" + name + add +"</a>"
 
@@ -26,7 +28,7 @@ $(function() {
       attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([lat, lng]).addTo(map).bindPopup(name).openPopup();
+    L.marker([lat, lng]).addTo(map).bindPopup(name + "<br>" + mapDes).openPopup();
 
     onMapClick = function(e) {
       window.e = e

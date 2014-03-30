@@ -23,7 +23,7 @@ $(document).ready(function() {
 	L.marker([
 		<%= location.latitude %>,
 		<%= location.longitude %>
-	]).addTo(map).bindPopup('<%=location.name%> <br><%= image_tag location.avatar.url(:thumb) %> <br> <%=location.description  %>' ).openPopup();
+	]).addTo(map).bindPopup('<%=location.name%> <br><%= image_tag location.avatar.url(:thumb) %> <br> <%=location.description  %>' )
 
 });
 </script>
