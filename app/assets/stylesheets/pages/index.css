@@ -1,4 +1,6 @@
-
+body {
+	margin-top: 0;
+}
 .main {
 	background-image:url("background_image_large.jpg");
 	background-repeat:no-repeat; 
@@ -9,6 +11,9 @@
 	height:600px;
 }
 
+.bufor-main {
+	height:70px;
+}
 
 .map-image {
 	width: 100%;

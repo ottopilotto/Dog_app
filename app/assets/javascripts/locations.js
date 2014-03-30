@@ -37,4 +37,9 @@ $(function() {
     popup = L.popup();
     return map.on("click", onMapClick);
   });
+
+
+  $("td[data-link]").click(function() {
+  window.location = $(this).data("link")
+})
 });

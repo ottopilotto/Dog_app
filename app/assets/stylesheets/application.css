@@ -15,3 +15,11 @@
  .alert-notice {
  	font-family: Trebuchet MS;
  }
+
+ body {
+ 	margin: 0;
+ }
+
+ .bufor {
+ 	height: 80px;
+ }

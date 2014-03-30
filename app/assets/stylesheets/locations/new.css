@@ -4,13 +4,13 @@ div {
 }
 div.registration-form {
 	color: white;
-	height: 480px;
+	height: 380px;
 	width: 500px;
 	background-color: #ACD907;
 	margin: auto;
 	/*text-align: center;*/
 	border-radius: 10px;
-	margin-top: 70px;
+	/*margin-top: 70px;*/
 }
 
 .form-logo {
@@ -125,4 +125,16 @@ div.registration-form {
     position: relative;
     top: 0;
     z-index: 1;
+}
+
+#address {
+	display:none;
+}
+
+#long {
+	display: none;
+}
+
+#lati {
+	display: none;
 }

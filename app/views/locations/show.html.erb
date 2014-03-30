@@ -1,36 +1,36 @@
-<h1>Location</h1>
+<div class="bufor"></div>
+<div class = location-details>
+  <div class = location-description>
+    <div class = details><h1>Location</h1>
 
-<p><strong>Name :</strong>
-	<%=@location.name %>
-</p>
+    <p><strong>Name :</strong>
+    	<%=@location.name %>
+    </p>
 
+    <p><strong>Description :</strong>
+    	<%=@location.description%>
+    </p>
 
-<p><strong>Address :</strong>
-	<%=@location.address %>
-</p>
+    <div id="information">
+      <%= image_tag @location.avatar.url(:medium) %>
+    </div>
 
-<p><strong>Description :</strong>
-	<%=@location.description%>
-</p>
-
-<%= image_tag @location.avatar.url(:medium) %>
-
+    <%= link_to 'Main page', locations_path  %>
+  </div>
+  </div>
+</div>
 <%= show_map(@location)  %>
-
-<% @location.nearbys(5, :units => :km).each do |location| %>
-  <li><%= link_to location.name, location %> (<%= location.distance.round(2) %> km)</li>
-  <% end %>
+<% @location.nearbys(2, :units => :km).each do |location| %>
+  
   <script type="text/javascript">
-$(document).ready(function() {
-	L.marker([
-		<%= @location.latitude %>,
-		<%= @location.longitude %>
-	]).addTo(map).bindPopup('<%=@location.name%> <br> <%=@location.description%>' ).openPopup();
+  	$(document).ready(function() {
+  		L.marker([
+  			<%= location.latitude %>,
+  			<%= location.longitude %>
+  		]).addTo(map).bindPopup('<%=location.name%> <br> <%= image_tag location.avatar.url(:thumb) %> <br> <%=location.description%>' ).openPopup();
 
-});
-</script>
+  	});
+	</script>
+<% end %>
 
 
-
-<!-- <div id="map" data-latitude = "<%= @location.latitude %>" data-longitude = <%= @location.longitude %>></div> -->
- 

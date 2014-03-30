@@ -1,3 +1,7 @@
+body {
+	margin-top: 0;
+}
+
 div.leaflet-popup-content {
 	width:100px;
 }
@@ -5,5 +9,31 @@ div.leaflet-popup-content {
 .instruction {
 	width:50%;
 	float:left;
+	margin: auto;
+	/*text-align: center;*/
+	border-radius: 10px;
+	margin-top: 15px;
+	color:black;
+	padding-top: 70px;
+}
 
+.instruction img {
+	width:100px;
+}
+table {
+	width:590px;
+	margin:auto;
+	text-align: center;
+}
+.name-holder{
+	margin-left: 10px;
+
+}
+
+.description-holder {
+
+}
+
+.image-holder {
+float:right;
 }

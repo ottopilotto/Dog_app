@@ -9,15 +9,15 @@
       <%= f.label :name %>
       <%=f.text_field :name, class: 'form-field'  %>
     </div>
-    <div>
+    <div id="address">
       <%= f.label :address %>
       <%= f.text_field :address, class: 'form-field' %>
     </div>
-    <div>
+    <div id="long">
       <%= f.label :longitude %>
       <%= f.text_field :longitude, class: 'form-field',:value => params[:lng]   %>
     </div>
-    <div>
+    <div id="lati">
       <%= f.label :latitude %>
       <%= f.text_field :latitude,  class: 'form-field', :value => params[:lat]%>
     </div>

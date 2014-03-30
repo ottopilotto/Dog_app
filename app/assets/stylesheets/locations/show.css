@@ -1,5 +1,5 @@
 #map { 
-	height: 500px; 
+	/*height: 500px; 
 	width: 500px;
 	margin:auto;
 	float:right;
@@ -7,9 +7,47 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	padding: 30px;
-	margin-top: 20px;
+	margin-top: 20px;*/
+	bottom: 0;
+	left: 646px;
+	position: fixed;
+	right: 0;
+	top: 90px;
+	z-index: 1;
+	
 }
 
 .leaflet-popup-content {
 	color: black;
+}
+
+#information {
+	background-color: white;
+	width:50%;
+}
+
+#information img {
+	max-height: 200px;
+}
+
+
+
+.location-description {
+	color: white;
+	height: 450px;
+	width: 500px;
+	background-color: #ACD907;
+	
+	/*text-align: center;*/
+	border-radius: 10px;
+	margin-top: 70px;
+	margin-left: 70px;
+
+}
+
+.details {
+	margin-left: 50px;
+	padding-top: 15px;
+
+
 }
