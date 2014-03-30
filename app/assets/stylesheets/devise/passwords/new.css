@@ -1,63 +1,14 @@
-div {
-	font-family: Trebuchet MS;
-	/*color: white;*/
-}
-div.registration-form {
-	height: 360px;
-	width: 500px;
-	background-color: #ACD907;
-	margin: auto;
-	/*text-align: center;*/
-	border-radius: 10px;
-	margin-top: 70px;
+.registration-form.resending {
+	height: 300px;
 }
 
-.form-logo {
-	width:100px;
-	padding:20px;
-	display: inline-block;
+.form_body #password-resending {
+	width:300px;
+	margin-top: 20px;
+}
+
+.resend-button {
 	
-		
-}
-
-.logo-image {
-	width:100px;
-
-}
-
-.form-header {
-	width:250px;
-
-	float:right;
-	font-size: 1.9em;
-	color: white;
-	padding: 40px;
-	margin-bottom: -50px;
-}
-
-.form-body {
-	float:right;
-	font-size: 1.5em;
-	margin-top: 10px;
-	text-align: right;
-	margin-right: 30px;	
-}
-
-.form-field {
-	width:200px;
-	height:35px ;
-	margin-bottom: 10px;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border: none;
-	padding-left:10px;
-}
-
-.form-field:focus {
-	
-}
-.form-button {
 	-moz-box-shadow:inset 0px 0px 0px -50px #ffffff;
 	-webkit-box-shadow:inset 0px 0px 0px -50px #ffffff;
 	box-shadow:inset 0px 0px 0px -50px #ffffff;
@@ -84,13 +35,19 @@ div.registration-form {
 	font-style:normal;
 	height:50px;
 	line-height:50px;
-	width:200px;
+	width:400px;
 	text-decoration:none;
 	text-align:center;
 	/*text-shadow:1px 1px 0px ;*/
-	margin-top: 10px;
-}.form-button:hover {
+	margin-top: 20px;
+}.resend-button-button:hover {
 	background-color:#dfdfdf;
-}.form-button:active {
+}.resend-button:active {
 	position:relative;
-	top:1px;}
+	top:1px;
+}
+
+.resend {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}

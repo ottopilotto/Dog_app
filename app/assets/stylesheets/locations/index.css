@@ -1,3 +1,9 @@
 div.leaflet-popup-content {
 	width:100px;
 }
+
+.instruction {
+	width:50%;
+	float:left;
+
+}

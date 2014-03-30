@@ -3,6 +3,7 @@ header {
 	background-repeat: no-repeat;
 	height: 70px; 
 	border-bottom: 1px dotted black;
+	background-color:  white;
 }
 
 .header-logo {

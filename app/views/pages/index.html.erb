@@ -1,6 +1,14 @@
-<div class="map-main"><%=image_tag 'map.jpg',class: 'map-image'  %></div>
+<section class="main">
+  
+	<div><%=image_tag 'map.jpg',class: 'map-image'  %></div>
+<!-- <div class="bgimg"><%#=image_tag 'cutted.jpg'%></div> -->
+	<div class="lead">
+		<p> <strong>Go Walk </strong> helps you find the perfect place for you and your dog,</p>
+		<p>meet new people who love their dogs the same way you do.</p> 
+	</div> 
+	<div class="button">
+		<button><%= link_to 'Get involved!', locations_path%></button>
+	</div>
 
+</section>
 
-<%=image_tag 'cutted.jpg', class: 'bgimg' %>
-
-<!-- <div class="background-image"><%#=image_tag 'background_image_large.jpg', class: 'bgimg' %></div> -->

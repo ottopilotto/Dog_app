@@ -26,8 +26,11 @@
       <%=f.text_field :description, class: 'form-field'%>
     </div>
 
-    <div>
-      <%= f.file_field :avatar %>
+    <div class= 'form-button', id="photo-attachment-container">
+      <%= f.label :avatar, 'Upload photo'%>
+      <div class="wrapper">
+        <button><%= f.file_field :avatar %></button>
+      </div>
     </div>
     <div>
       <%= f.submit "Create location", class: 'form-button' %>

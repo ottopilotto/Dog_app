@@ -1,16 +1,21 @@
-<h2>Change your password</h2>
+<div class="registration-form">
+	<div class="form-logo"><%=image_tag 'dog_logo.png', class: 'logo-image'%></div>
+  <div class="form-header">Change your password</div>
+  <div class="form-body">
 
-<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
-  <%= devise_error_messages! %>
-  <%= f.hidden_field :reset_password_token %>
+    <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
+      <%= devise_error_messages! %>
+      <%= f.hidden_field :reset_password_token %>
 
-  <div><%= f.label :password, "New password" %><br />
-  <%= f.password_field :password, :autofocus => true %></div>
+      <div><%= f.label :password, "New password" %>
+      <%= f.password_field :password, :autofocus => true, class: 'form-filed' %></div>
 
-  <div><%= f.label :password_confirmation, "Confirm new password" %><br />
-  <%= f.password_field :password_confirmation %></div>
+      <div><%= f.label :password_confirmation, "Confirm new password" %>
+      <%= f.password_field :password_confirmation, class: 'form-filed' %></div>
 
-  <div><%= f.submit "Change my password" %></div>
-<% end %>
+      <div><%= f.submit "Change my password", class: 'form-button' %></div>
+    <% end %>
+  </div>
+</div>
 
-<%= render "devise/shared/links" %>
+
